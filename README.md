@@ -142,11 +142,11 @@ helm repo add grafana https://grafana.github.io/helm-charts
 ```
 2.Update the Helm repositories:
 ```bash
-helm install grafana grafana/grafana
+helm repo update 
 ```
 3.Install Grafana using Helm:
 ```bash
-helm repo update
+helm install grafana grafana/grafana
 ```
 3.Expose Grafana service:
 ```bash
