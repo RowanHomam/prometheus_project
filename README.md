@@ -120,15 +120,12 @@ helm repo update
 ```bash
 helm install prometheus prometheus-community/prometheus
 ```
-4.Install Prometheus:
-```bash
-helm install prometheus prometheus-community/prometheus
-```
-5.Expose Prometheus service:
+
+4.Expose Prometheus service:
 ```bash
 kubectl expose service prometheus-server — type=NodePort — target-port=9090 — name=prometheus-server-ext
 ```
-6.Open Web App of Prometheus
+5.Open Web App of Prometheus
 ```bash
 minikube service prometheus-server-ext
 ```
