@@ -114,11 +114,11 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 ```
 2.Update the Helm repositories:
 ```bash
-helm install prometheus prometheus-community/prometheus
+helm repo update 
 ```
 3.Install Prometheus using Helm:
 ```bash
-helm repo update
+helm install prometheus prometheus-community/prometheus
 ```
 4.Install Prometheus:
 ```bash
